@@ -87,9 +87,8 @@ export function CookieConsent() {
         <span className="eyebrow">YOUR JOURNEY. YOUR CHOICES.</span>
         <h2>Cookie preferences</h2>
         <p>
-          We remember your cookie choices so you stay in control. Optional
-          features stay off unless you allow them. We currently use no analytics
-          or advertising trackers.
+          A little choice before your next journey. Optional cookies stay off
+          unless you say yes. We currently use no analytics or advertising trackers.
         </p>
         <p className="cookie-policy-links">
           Read our <Link href="/cookies">Cookie policy</Link> and{" "}
@@ -99,7 +98,7 @@ export function CookieConsent() {
       <div className="cookie-actions">
         <button
           type="button"
-          className="cookie-secondary"
+          className="cookie-customize"
           aria-expanded={settings}
           aria-controls="cookie-categories"
           onClick={() => setSettings(!settings)}
@@ -113,13 +112,15 @@ export function CookieConsent() {
         >
           Reject optional
         </button>
-        <button
-          type="button"
-          className="cookie-primary"
-          onClick={() => choose(preferences)}
-        >
-          Save choices
-        </button>
+        {settings && (
+          <button
+            type="button"
+            className="cookie-primary cookie-save"
+            onClick={() => choose(preferences)}
+          >
+            Save choices
+          </button>
+        )}
         <button
           type="button"
           className="cookie-primary"
@@ -132,7 +133,7 @@ export function CookieConsent() {
             })
           }
         >
-          Accept all
+          Accept all <span aria-hidden="true">↗</span>
         </button>
       </div>
       {settings && (
