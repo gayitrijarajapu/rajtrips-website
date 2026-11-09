@@ -159,8 +159,8 @@ export default function Home() {
           <section className="about section" id="about">
             <div className="about-photo">
               <Image
-                src="/images/journey.jpg"
-                alt="A view from inside a car while travelling along a scenic road"
+                src="/images/bd1aa9d5e75483576cef615046530624.jpg"
+                alt="View from inside a Toyota on an open road beneath an evening sky"
                 fill
                 sizes="(max-width: 760px) 100vw, 50vw"
               />

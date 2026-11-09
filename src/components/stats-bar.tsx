@@ -5,9 +5,9 @@ import { fleet } from "@/lib/fleet";
 
 // Business figures supplied by the rajtrips owner.
 const stats = [
-  { value: 14000, label: "Happy customers" },
-  { value: 4, label: "Years of experience" },
-  { value: 13000, label: "Trips completed" },
+  { value: 14367, label: "Happy customers" },
+  { value: 24, suffix: "/7", label: "Booking support" },
+  { value: 13781, label: "Trips completed" },
   { value: fleet.length, label: "Car models" },
 ];
 const numberFormat = new Intl.NumberFormat("en-IN");
@@ -64,13 +64,17 @@ export function StatsBar() {
           <div className="stat-item" key={stat.label}>
             <p
               className="stat-number"
-              aria-label={`${numberFormat.format(stat.value)}+ ${stat.label}`}
+              aria-label={`${numberFormat.format(stat.value)}${stat.suffix ?? "+"} ${stat.label}`}
             >
               <span aria-hidden="true">
                 {numberFormat.format(Math.floor(stat.value * progress))}
-                <span className={`stat-plus${complete ? " is-visible" : ""}`}>
-                  +
-                </span>
+                {stat.suffix ? (
+                  <span>{stat.suffix}</span>
+                ) : (
+                  <span className={`stat-plus${complete ? " is-visible" : ""}`}>
+                    +
+                  </span>
+                )}
               </span>
             </p>
             <p className="stat-label">{stat.label}</p>
