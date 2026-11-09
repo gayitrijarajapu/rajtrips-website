@@ -1,0 +1,16 @@
+rajtrips-hero.png: User-supplied photo, Screenshot 2026-11-08 at 12.02.14 AM.png; copied unchanged for the hero.
+hero-car.jpg: https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=85
+journey.jpg: https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1100&q=80
+Stock photography is illustrative, not evidence of the business's vehicles or locations.
+
+White SUV on a Mountainous Grassy Slope.png: User-supplied hero image; used unchanged.
+
+Fleet kia-carens.png: https://www.kia.com/content/dam/kia2/in/en/images/360vr/carens/tyw7d6617dd408/exterior/ud/09-d.png (manufacturer catalogue image, representative model only)
+
+Fleet innova.webp: https://static3.toyotabharat.com/images/showroom/innova-mmc/super-white-color-1600x600.webp (manufacturer catalogue image, representative model only)
+
+Fleet dzire.png: https://www.suzukicar.com.bd/storage/uploads/images/products/Artic White_1793430851.png (manufacturer catalogue image, representative model only)
+
+Fleet ertiga.png: https://www.suzukicar.com.bd/storage/uploads/images/products/1000 x 386  Top inner_1663074390.png (manufacturer catalogue image, representative model only)
+
+ertiga.webp: https://d37ehbjruvijch.cloudfront.net/models/ALL-NEW-ERTIGA-06/ARK415FM05GLATP/colors/GLANEPUTIH_1726624671886_1758780473168.webp (Suzuki Indonesia model catalogue)
