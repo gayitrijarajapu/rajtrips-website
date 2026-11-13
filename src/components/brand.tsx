@@ -3,7 +3,7 @@ import Image from "next/image";
 import { CookieSettingsButton } from "@/components/cookie-consent";
 import { ButtonArrow } from "@/components/button-arrow";
 import Link from "next/link";
-import { site, services } from "@/lib/site";
+import { formatIndianPhone, site, services } from "@/lib/site";
 export function Brand() {
   return (
     <Link href="/" className="brand" aria-label={`${site.name} home`}>
@@ -39,6 +39,7 @@ export function Header() {
 }
 export function Footer() {
   const whatsapp = `https://wa.me/${site.phone.replace(/\D/g, "")}`;
+  const secondaryCallPhone = site.secondaryPhone;
   return (
     <footer className="site-footer">
       <div className="footer-card">
@@ -50,7 +51,7 @@ export function Footer() {
               memorable escapes across India.
             </p>
             <div className="footer-contact-pills">
-              <a href={`tel:${site.phone}`} aria-label="Call rajtrips">
+              <a href={`tel:${secondaryCallPhone}`} aria-label="Call rajtrips">
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path
                     d="m7 3 3 5-2 2c1 3 3 5 6 6l2-2 5 3c-1 5-5 5-9 3S3 13 3 8c0-3 1-5 4-5Z"
@@ -87,7 +88,12 @@ export function Footer() {
           </nav>
           <div className="footer-column footer-reach">
             <h2>Let’s talk travel</h2>
-            <a href={`tel:${site.phone}`}>+91 81212 87777</a>
+            <a className="footer-phone" href={`tel:${site.phone}`}>
+              {formatIndianPhone(site.phone)}
+            </a>
+            <a className="footer-phone" href={`tel:${secondaryCallPhone}`}>
+              {formatIndianPhone(secondaryCallPhone)}
+            </a>
             <a href={whatsapp} target="_blank" rel="noopener noreferrer">
               Enquire on WhatsApp ↗
             </a>

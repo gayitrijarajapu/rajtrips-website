@@ -3,6 +3,8 @@ export const site = {
   tagline: "A better way to get there.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://rajtrips.com",
   phone: process.env.NEXT_PUBLIC_BUSINESS_PHONE || "+918121287777",
+  secondaryPhone:
+    process.env.NEXT_PUBLIC_BUSINESS_SECONDARY_PHONE || "+918885227707",
   email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL || "",
   city: process.env.NEXT_PUBLIC_BUSINESS_CITY || "",
   address: process.env.NEXT_PUBLIC_BUSINESS_ADDRESS || "",
@@ -13,6 +15,15 @@ export const indexable =
   process.env.SITE_INDEXABLE === "true" &&
   !!process.env.NEXT_PUBLIC_SITE_URL &&
   process.env.VERCEL_ENV !== "preview";
+
+export function formatIndianPhone(phone: string) {
+  const digits = phone.replace(/\D/g, "").replace(/^91/, "");
+  if (digits.length === 10) {
+    return `+91 ${digits.slice(0, 5)} ${digits.slice(5)}`;
+  }
+  return phone;
+}
+
 export const services = [
   {
     slug: "outstation-trips",

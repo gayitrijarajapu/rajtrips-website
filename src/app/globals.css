@@ -2837,7 +2837,7 @@ footer.site-footer {
   color: #216a70;
   transform: translateX(3px);
 }
-.footer-column.footer-reach > a:first-of-type {
+.footer-column.footer-reach > .footer-phone {
   color: #25586c;
   font-size: 16px;
   letter-spacing: -0.02em;

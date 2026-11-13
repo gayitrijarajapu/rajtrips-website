@@ -23,6 +23,7 @@ Set values in `.env.local` locally and in Vercel → Project → Settings → En
 | `NEXT_PUBLIC_BUSINESS_NAME`        | Real trading name; defaults to rajtrips                   |
 | `NEXT_PUBLIC_SITE_URL`             | Final HTTPS canonical domain without trailing slash              |
 | `NEXT_PUBLIC_BUSINESS_PHONE`       | WhatsApp number with country code                                |
+| `NEXT_PUBLIC_BUSINESS_SECONDARY_PHONE` | Secondary call number with country code                       |
 | `NEXT_PUBLIC_BUSINESS_EMAIL`       | Optional public contact email                    |
 | `NEXT_PUBLIC_BUSINESS_CITY`        | Actual main city                                                 |
 | `NEXT_PUBLIC_BUSINESS_ADDRESS`     | Public business street address                                   |
